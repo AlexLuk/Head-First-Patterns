@@ -4,5 +4,14 @@ public class DucksTestDrive {
         mallardDuck.performFly();
         mallardDuck.performQuack();
         mallardDuck.display();
+
+        Duck modelDuck = new ModelDuck();
+        modelDuck.performFly();
+        modelDuck.performQuack();
+        modelDuck.display();
+
+        modelDuck.setFlyBehavior(new FlyWithRocket());
+        modelDuck.performFly();
+
     }
 }
