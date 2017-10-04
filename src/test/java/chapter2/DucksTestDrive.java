@@ -1,3 +1,5 @@
+package chapter2;
+
 public class DucksTestDrive {
     public static void main(String[] args) {
         Duck mallardDuck = new MallardDuck();
@@ -12,6 +14,5 @@ public class DucksTestDrive {
 
         modelDuck.setFlyBehavior(new FlyWithRocket());
         modelDuck.performFly();
-
     }
 }

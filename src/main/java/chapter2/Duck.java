@@ -1,11 +1,13 @@
-public abstract class Duck {
-    protected FlyBehavior flyBehavior;
+package chapter2;
 
-    protected QuackBehavior quackBehavior;
+public abstract class Duck {
+    FlyBehavior flyBehavior;
+
+    QuackBehavior quackBehavior;
 
     public abstract void display();
 
-    public void setFlyBehavior(FlyBehavior flyBehavior) {
+    void setFlyBehavior(FlyBehavior flyBehavior) {
         this.flyBehavior = flyBehavior;
     }
 
@@ -13,11 +15,11 @@ public abstract class Duck {
         this.quackBehavior = quackBehavior;
     }
 
-    public void performFly(){
+    void performFly(){
         flyBehavior.fly();
     }
 
-    public void performQuack(){
+    void performQuack(){
         quackBehavior.quack();
     }
 }
